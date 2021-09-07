@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 1200px;
+    margin: 0 75px;
+}
+
+/* Common */
+
+/* Common */
+
+#nav {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    list-style-type: none;
+    overflow-y:auto;
+    top: 0;
+    bottom: 0;
+    
+}
+
+#nav .logo {
+    padding: 16px;
+    
+}
+#nav .logo .logo-content {
+    line-height: 36px;
+    margin: 10px 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 4px;
+}
+#nav .logo .logo-content b {
+    font-weight: 500;
+    
+}
+#nav .list-item, .sub-list-item, .nav-contact-list {
+    list-style-type: none;
+}
+#nav .items {
+    padding: 64px 0;
+    width: 100%;
+    display: block;
+}
+#nav .list-item li {
+    width: 100%;
+
+}
+.nav-contact-list li:hover a,
+#nav .list-item >li:hover > a,
+#nav .sub-list-item > li:hover > a {
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav .list-item li a {
+    width: 100%;
+    padding: 11px 16px;
+    display: block;
+    font-size: 18px;
+    color: #757575;
+    font-weight: 600;
+    text-decoration: none;
+}
+#nav .sub-list-item {
+    padding: 12px 24px;
+}
+#nav .sub-list-item li {
+    display: block;
+}
+#nav .sub-item {
+    font-size: 15px;
+    display: none;
+}
+#nav .sub-item.open {
+    display: block;
+}
+
+#nav .nav-contact {
+    
+}
+.nav-contact-list {
+    
+}
+.nav-contact-list li {  
+    font-size: 15px; 
+}
+
+.nav-contact-list a {
+    width: 100%;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 8px 16px; 
+    line-height: 22px;
+    
+}
+#main {
+
+}
+#header {
+
+}
+#slide {
+
+}
+#content {
+
+}
+#subscribe {
+
+}
+#contact {
+
+}
+#footer {
+
+}
