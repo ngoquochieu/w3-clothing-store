@@ -18,7 +18,17 @@ body {
 
 
 /* Common */
+.clear {
+    clear: both;
+}
 
+.uppercase-text{
+    text-transform: uppercase;
+}
+
+.font-weight {
+    font-weight: 100;
+}
 /* Common */
 
 #nav {
@@ -41,7 +51,6 @@ body {
     line-height: 36px;
     margin: 10px 0;
     font-size: 24px;
-    text-transform: uppercase;
     display: block;
     letter-spacing: 4px;
 }
@@ -111,16 +120,68 @@ body {
     
 }
 #main {
-  
+  margin-left: 250px;
+  padding: 0.24px 16px;
 }
 #header {
     
+    
 }
-.header-content {
-   
-}
-#slide {
 
+.header-container {
+   font-size: 24px;
+   line-height: 88px;
+  
+}
+
+.header-container-left {
+    float: left;
+    letter-spacing: 3px;
+    font-weight: 0;
+}
+.header-search {
+    float: right;
+}
+.header-search .btn-search {
+    margin-left: 15px;
+}
+
+#main .img-container {
+    position: relative;
+    width: 100%;
+    height: 612px;
+} 
+#main .img-content {
+    position: absolute;
+    padding: 46px 36px;
+    top: 0;
+    color: #fff ;
+}
+.first-content-img {
+    font-size: 64px;
+    margin-bottom: 30px;
+
+    
+}
+.second-content-img {
+    font-size: 36px;
+    margin-bottom: 15px;
+    
+}
+.img-content>p:hover .shop-now {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+
+}
+.img-content .shop-now {
+    font-size: 18px;
+    padding: 12px 24px;
+    line-height: 51px;
+    background-color: #000;
+    letter-spacing: 1px;
+    color: #fff;
+    border: none;
 }
 #content {
 
