@@ -29,6 +29,20 @@ body {
 .font-weight {
     font-weight: 100;
 }
+
+.row {
+    margin: 0 -10px;
+}
+
+.col {
+    padding: 0 10px;
+}
+
+.col-four {
+    width: calc(917px / 4);
+}
+
+
 /* Common */
 
 #nav {
@@ -183,9 +197,91 @@ body {
     color: #fff;
     border: none;
 }
+#main .quantity-items {
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+#main .quantity-items p {
+    margin: 15px 0;
+    line-height: 22px;
+}
+
 #content {
 
 }
+
+#content .list-production-section {
+   
+}
+#content .item   {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+}
+
+#content .item .info-item p {
+    margin: 15px 0;
+    padding: 1px 0;
+    line-height: 1.4;
+}
+
+.item .img-item {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.item .img {
+    position: relative;
+    width: 100%;
+    
+}
+
+.item-new, .item-sale {
+    position: absolute;
+}
+
+.item-new, .item-sale {
+    top: 0;
+    left: 0;
+    font-size: 15px;
+    padding: 3px 8px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1px;
+    display: none;
+}
+
+.display {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img:hover .btn-buy{
+    display: block;
+}
+.display:hover .btn-buy {
+    background-color: #ccc;
+    color: #000;
+    
+}
+.display .btn-buy {
+    display: inline-block;
+    font-size: 15px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 13px;
+    display: none;
+}
+
+.btn-buy.open, 
+.item-new.open,
+.item-sale.open {
+    display: block;
+}
+
 #subscribe {
 
 }
