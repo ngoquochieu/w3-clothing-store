@@ -11,7 +11,7 @@ html {
 
 body {
     max-width: 1200px;
-    margin: 0 75px;
+    margin: 0 74.5px;
    
 }
 
@@ -31,17 +31,23 @@ body {
 }
 
 .row {
-    margin: 0 -10px;
+    padding: 0 16px;
+    margin: 0 -16px;
+     font-size: 0px;  /* Ngăn chặn các khối bên trong xuất hiện khoảng trắng trong 1 thẻ cha*/
 }
 
 .col {
-    padding: 0 10px;
+    
 }
 
 .col-four {
-    width: calc(917px / 4);
+    
+    width: calc(950px / 4);
 }
 
+.pd-16 {
+    padding: 0 16px;
+}
 
 /* Common */
 
@@ -135,7 +141,7 @@ body {
 }
 #main {
   margin-left: 250px;
-  padding: 0.24px 16px;
+  padding: 0.24px 0px;
 }
 #header {
     
@@ -208,7 +214,7 @@ body {
 }
 
 #content {
-
+    width: 950px;
 }
 
 #content .list-production-section {
@@ -217,9 +223,15 @@ body {
 #content .item   {
     display: inline-block;
     position: relative;
+    
     font-size: 15px;
 }
-
+#content .img,
+#content .info-item {
+    padding: 0 16px;
+   
+    
+}
 #content .item .info-item p {
     margin: 15px 0;
     padding: 1px 0;
@@ -272,7 +284,7 @@ body {
     border: none;
     background-color: #000;
     color: #fff;
-    padding: 8px 13px;
+    padding: 10px 16px;
     display: none;
 }
 
