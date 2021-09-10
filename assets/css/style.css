@@ -33,23 +33,38 @@ div {
 .font-weight {
     font-weight: 100;
 }
-
+.row-full::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
 .row {
-    padding: 0 16px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin: 0 -16px;
-     font-size: 0px;  /* Ngăn chặn các khối bên trong xuất hiện khoảng trắng trong 1 thẻ cha*/
+    font-size: 0px;  /* Ngăn chặn các khối bên trong xuất hiện khoảng trắng trong 1 thẻ cha*/
 }
 
 .row-full {
     width: 100%;
 }
 .col {
-    
+    float: left;
 }
 
+.col-full {
+    width: 100%;
+}
+
+.col-third {
+    width: calc(100% / 3);
+}
 .col-four {
-    
     width: calc(950px / 4);
+}
+.pd-8 {
+    padding: 0 8px;
 }
 
 .pd-16 {
@@ -75,6 +90,9 @@ div {
     border: none;
 }
 
+.text-center {
+    text-align: center;
+}
 /* Common */
 
 #nav {
@@ -247,16 +265,14 @@ div {
    
 }
 #content .item   {
-    display: inline-block;
     font-size: 15px;
+    padding: 0 16px;
 }
 #content .img-item {
     width: 100%;
 }
 
-#content .item-img-container {
-    padding: 0 16px;
-}
+
 #content .img {
     position: relative;
 }
@@ -349,6 +365,7 @@ div {
     margin-bottom: 16px;
 }
 #subscribe .btn-submit-form {
+    width: 100;
     color: #fff;
     background-color: #FA3636;
     font-size: 15px;
@@ -364,3 +381,81 @@ div {
 #footer {
 
 }
+
+#footer #contact-st {
+    padding: 64px 0;
+    background-color:  rgb(241, 241, 241);
+}
+
+#footer .contact-container::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#footer .contact-container  {
+    color: #000;
+    font-size: 12px;
+}
+
+#footer .contact-st-header {
+    font-size: 20px;
+    margin: 10px 0;
+    line-height: 30px;
+    letter-spacing: 1px;
+    
+}
+
+#footer .contact-st-content{
+    line-height: 18px;
+    margin-bottom: 10px;
+    letter-spacing: .5px;
+}
+
+#footer .form-contact {
+    width: 100%;
+    padding: 8px;
+    /* line-height: 36px; */
+    margin: 10px;
+    border: #ccc solid 1px;
+}
+#footer .btn-send:hover {
+    background-color: #ccc;
+    color: #000;
+}
+#footer .btn-send {
+    background-color: #000;
+    color: #fff;
+}
+#footer .contact-st-about-content a {
+    color: #000;
+    
+}
+#footer .contact-st-about-content li{
+    margin: 12px 0;
+    list-style: none;
+    letter-spacing: 0.5px;
+}
+
+#footer .contact-st-store-content>li {
+    margin: 12px 0;
+    list-style: none;
+}
+
+#footer .contact-st-store-content> p {
+    font-size: 20px;
+    padding: 5px 0;
+}
+#footer .author-content> a:hover {
+    color: #757575;
+}
+#footer .author-content> a {
+    color: #fff;
+}
+
+#footer #author .author-content {
+    font-size: 15px;
+    padding: 24px 0;
+    background-color: #000;
+    color: #fff;
+}
+
