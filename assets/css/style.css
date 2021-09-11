@@ -428,6 +428,7 @@ div {
 }
 #footer .contact-st-about-content a {
     color: #000;
+    line-height: 18px;
     
 }
 #footer .contact-st-about-content li{
@@ -436,14 +437,17 @@ div {
     letter-spacing: 0.5px;
 }
 
-#footer .contact-st-store-content>li {
+#footer .contact-st-store-content >li {
     margin: 12px 0;
     list-style: none;
+    letter-spacing: .5px;
+    line-height: 18px;
 }
 
-#footer .contact-st-store-content> p {
+#footer .contact-st-store-content li > h4 {
     font-size: 20px;
     padding: 5px 0;
+    font-weight: 400;
 }
 #footer .author-content> a:hover {
     color: #757575;
@@ -458,4 +462,16 @@ div {
     background-color: #000;
     color: #fff;
 }
+
+#footer .contact-st-store-content .social-network li {
+    display: inline-block;
+}
+#footer .contact-st-store-content .social-network li i {
+    font-size: 18px;
+}
+
+#footer .contact-st-store-content .social-network li:hover p {
+    opacity: 0.7;
+}
+
 
